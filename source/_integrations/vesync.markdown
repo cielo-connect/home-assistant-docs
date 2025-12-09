@@ -1,11 +1,12 @@
 ---
 title: VeSync
-description: Instructions on how to set up VeSync switches, outlets, and fans within Home Assistant.
+description: Instructions on how to set up VeSync devices with Home Assistant. 
 ha_category:
   - Fan
   - Light
   - Number
   - Switch
+  - Update
 ha_release: 0.66
 ha_iot_class: Cloud Polling
 ha_config_flow: true
@@ -27,10 +28,11 @@ ha_platforms:
   - select
   - sensor
   - switch
+  - update
 ha_integration_type: integration
 ---
 
-The **VeSync** {% term integration %} enables you to control smart switches and outlets connected to the VeSync App.
+The **VeSync** {% term integration %} enables you to control a wide variety of Levoit devices connected to the VeSync App. Currently this integration supports most bulbs, fans, air purifiers, switches, outlets and humidifers. It does not support Cosori devices. 
 
 The devices must be added to the VeSync App before this {% term integration %} can discover them.
 
@@ -43,10 +45,11 @@ The following platforms are supported:
 - **number**
 - **sensor**
 - **switch**
+- **update**
 
 ## Supported devices
 
-This {% term integration %} supports devices controllable by the VeSync App.  The following devices are supported by this {% term integration %}:
+This {% term integration %} supports devices controllable by the VeSync App. The following devices are supported by this {% term integration %}. This list may not be exhaustive as devices have multiple model numbers within this.
 
 ### Bulbs
 - Etekcity WiFi Dimmable LED Bulb (ESL100)
@@ -91,6 +94,12 @@ VeSync App. Once registration is complete, continue with the steps described in
 the configuration section below.
 
 {% include integrations/config_flow.md %}
+
+## Removing the integration
+
+This integration follows standard integration removal. No extra steps are required.
+
+{% include integrations/remove_device_service.md %}
 
 ## Actions
 

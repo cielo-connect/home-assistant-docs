@@ -137,6 +137,9 @@ MQTT Devices and entities can be set up through [MQTT -discovery](#mqtt-discover
 - [Sensor](/integrations/sensor.mqtt/)
 - [Siren](/integrations/siren.mqtt/)
 - [Switch](/integrations/switch.mqtt/)
+- [Text](/integrations/text.mqtt/)
+- [Valve](/integrations/valve.mqtt/)
+- [Water heater](/integrations/water_heater.mqtt/)
 
 To add an MQTT device via a Subentry, follow these steps:
 
@@ -1379,6 +1382,7 @@ The following software has built-in support for MQTT discovery:
 - [TeddyCloud](https://github.com/toniebox-reverse-engineering/teddycloud)
 - [Teleinfo MQTT](https://fmartinou.github.io/teleinfo2mqtt) (starting with 3.0.0)
 - [Tydom2MQTT](https://tydom2mqtt.github.io/tydom2mqtt/)
+- [Updates2MQTT](https://updates2mqtt.rhizomatics.org.uk)
 - [What's up Docker?](https://fmartinou.github.io/whats-up-docker/) (starting with 3.5.0)
 - [WyzeSense2MQTT](https://github.com/raetha/wyzesense2mqtt)
 - [Xiaomi DaFang Hacks](https://github.com/EliasKotlyar/Xiaomi-Dafang-Hacks)
